@@ -1,6 +1,12 @@
 body{
   background: #f1f1f1;
 }
+.date{
+  width: 200px;
+}
+.add{
+  width: 100px;
+}
 
 .deadline{
   width: 200px;
