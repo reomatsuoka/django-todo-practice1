@@ -1,0 +1,38 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+  <div class="card">
+    <div class="card-body">
+      <div class="">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Todo</th>
+              <th scope="col" class="deadline">期日</th>
+              <th scope="col" class="edit">編集</th>
+              <th scope="col" class="delete">完了</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for todo in todo_data %}
+            <tr>
+              <td>{{ todo.title }}</td>
+              <td>{{ todo.deadline }}</td>
+              <td>
+                <a href="">
+                  <i class="fas fa-trash-alt text-danger"></i>
+                </a>
+              </td>
+              <td>
+                <a href="">
+                  <i class="fas fa-edit text-success"></i>
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

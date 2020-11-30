@@ -1,0 +1,13 @@
+body{
+  background: #f1f1f1;
+}
+
+.deadline{
+  width: 200px;
+}
+.edit{
+  width: 100px;
+}
+.delete{
+  width: 100px;
+}
